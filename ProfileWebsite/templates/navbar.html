@@ -1,0 +1,35 @@
+<!-- # site header 
+  
+        ================================================== -->
+{% load static %}
+  <div class="row s-header__inner width-sixteen-col">
+    <div class="s-header__block">
+      <div class="s-header__logo">
+        <a class="logo" href="{% url 'home' %}">
+          <img src="{% static 'images/logo.svg' %} " alt="Homepage" />
+        </a>
+      </div>
+    </div>
+    <!-- end s-header__block -->
+
+    <nav class="s-header__nav">
+      <ul class="s-header__menu-links">
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'projects' %}">Projects</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+        <li><a href="{% url 'styles' %}">Styles</a></li>
+      </ul>
+      <!-- s-header__menu-links -->
+
+      <div class="s-header__contact">
+        <a href="contact" class="btn btn--primary s-header__contact-btn"
+          >Let's Work Together</a
+        >
+      </div>
+      <!-- s-header__contact -->
+    </nav>
+    <!-- end s-header__nav -->
+  </div>
+  <!-- end s-header__inner -->
+
+<!-- end s-header -->
